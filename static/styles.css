@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #1c1e22; /* Dark background color */
+    color: #EAE0D5; /* Light text color */
+    animation: fadeIn 1s ease-in-out;
+     /* Add animation for chat container */
+}
+
+/* Set the 'Quicksand' font for all text */
+html, body, h1, p, input[type="text"], button {
+    font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.branding {
+    text-align: center;
+    background: linear-gradient(to right, #004bd9, black); /* Background color for branding section */
+    color: white; /* Text color for branding section */
+    padding: 20px;
+    font-size: 24px; /* Adjust the font size as needed */ /* Replace "Your Cool Font" with the desired font */
+    /* Add any other styling you want for the branding section */
+}
+
+.branding p {
+    font-size: 16px; /* Adjust the font size for the description */
+    margin-top: 10px; /* Add some spacing between the title and description */
+}
+
+
+.chat-container {
+    max-width: 600px;
+    margin: auto; /* Center horizontally */
+    font-size: larger;
+    background-color: #2f323b; /* Darker background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    height: 80vh;
+    
+}
+
+
+
+
+/* Rest of your existing CSS styles */
+
+
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 10px;
+    overflow: hidden; /* Hide the scroll bar */
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+}
+
+
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #4c4c6a; /* Darker border color */
+}
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+/* Your existing CSS styles */
+
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    transform: translateY(100%); /* Initially hidden below the chat input */
+    opacity: 0; /* Initially hidden */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Add animation transitions */
+}
+
+.user-message {
+    background: #004bd9; /* Blue background for user messages */
+    color: white;
+    align-self: flex-end; /* User messages on the right */
+}
+
+.bot-message {
+    background-color: #5b5e6c; /* Gray background for bot messages */
+    color: white;
+    align-self: flex-start; /* Bot messages on the left */
+}
+
+
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 20px; /* Increase padding to make it taller */
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    outline: none;
+    background-color: #40434e; /* Darker background color */
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+button {
+    background: #40434e; /* Darker background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 22.5px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004bd9; /* Highlight color */
+}
+
